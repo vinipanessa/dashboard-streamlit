@@ -30,7 +30,7 @@ pip install streamlit pandas numpy plotly requests pillow
 #### Execute o comando abaixo na raiz do projeto para iniciar o Streamlit:
 
 ```bash
-streamlit run nome_do_arquivo.py
+streamlit run dashboard.py
 ```
 ### Observações
 
