@@ -39,3 +39,11 @@ streamlit run nome_do_arquivo.py
 - O mapa geoespacial utiliza um arquivo GeoJSON público para desenhar os estados do Brasil.
 
 - Este projeto pode ser adaptado para integrar dados reais do Santander para análises mais profundas.
+
+### Prints Funcionais
+
+![Dashboard Santander](assets/dashboard_preview.png)
+
+![Dashboard Santander](assets/dashboard_preview2.png)
+
+![Dashboard Santander](assets/dashboard_preview3.png)
