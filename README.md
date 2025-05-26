@@ -1,4 +1,4 @@
-# Painel Estratégico do Cliente PJ - Santander
+# Painel Financeiro Santander - ConnectaPJ
 
 ## Funcionalidades
 
