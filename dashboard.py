@@ -78,8 +78,8 @@ if perfil_pagamento != "Todos":
 
 # --- Título ---
 st.markdown("""
-    <h1 style='color:#ec0000;'>Painel Estratégico do Cliente PJ - Santander</h1>
-    <p style='color:#555;'>Análise integrada de indicadores financeiros e operacionais de empresas clientes do Santander</p>
+    <h1 style='color:#ec0000; text-align: center;'>Painel Financeiro Santander <br> ConnectaPJ</h1>
+    <p style='color:#555; text-align: center;'>Análise integrada de indicadores financeiros e operacionais de empresas clientes do Santander</p>
     <hr>
 """, unsafe_allow_html=True)
 
