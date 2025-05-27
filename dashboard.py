@@ -45,9 +45,8 @@ for ano in anos:
         for estado in estados:
             for s in setores:
                 for p in portes:
-                    receita = np.random.normal(loc=200000 if p == "Grande" else 120000 if p == "Média" else 70000,
-                                                scale=30000)
-                    fluxo = np.random.normal(loc=receita * 0.25, scale=receita * 0.05)
+                    receita = max(np.random.normal(200000, 80000), 1000)
+                    fluxo = np.random.normal(loc=receita * 0.25, scale=max(receita * 0.05, 1))
                     dados.append({
                         "Ano": ano,
                         "Mês": mes_num,
@@ -56,11 +55,11 @@ for ano in anos:
                         "Setor": s,
                         "Porte": p,
                         "Receita": receita,
-                        "VolumeTransacoes": np.random.randint(100, 1500),
+                        "VolumeTransacoes": np.random.randint(100, 1000),
                         "FluxoCaixa": fluxo,
-                        "ClientesAtivos": np.random.randint(30, 800),
-                        "RiscoCredito": np.random.choice(riscos, p=[0.5, 0.3, 0.2]),
-                        "PerfilPagamento": np.random.choice(["Pontual", "Atrasado", "Inadimplente"], p=[0.6, 0.3, 0.1])
+                        "ClientesAtivos": np.random.randint(50, 500),
+                        "RiscoCredito": np.random.choice(riscos),
+                        "PerfilPagamento": np.random.choice(["Pontual", "Atrasado", "Inadimplente"])
                     })
 df = pd.DataFrame(dados)
 
